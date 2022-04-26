@@ -1,19 +1,75 @@
-nav{
-    font-family: Helvetica;  
-    font-size: 20px; 
+body{margin:0%;
+background-image:url(../L03/pexels-olha-ruskykh-5984612.jpg);} 
+ #logo{margin: 40px; margin-left: 15%;
+float:left}
+ a { font-family: Helvetica;  
+    font-size: 30px; 
+    font-style:inherit;
     text-align: right ; 
-    color: black; 
     text-decoration: none;
-    padding: 10px;
-   }
-
+    padding: 10px;;
+    margin-top: 10px;
+    float: right;
+    color: black;
+     }
+     a:hover {
+       color: white;
+       text-decoration: solid ;
+       text-decoration: underline;
+      }
+      a:active  
+      { color: white;
+        text-decoration: solid ;
+    text-decoration: underline;}
 .container{
-    width: 800px;align-content: center;padding:center;margin: auto;}
+    width: 800px;
+    align-content: center;
+    padding:center;
+    margin: auto;display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    }
 
-.hintergrundbild {background:url("../L03/DSC_1628.JPG") no-repeat center;
+ 
+
+.hintergrundbild {background:url("../L03/DSC_1327.JPG") no-repeat center;
     background-size: cover;
     height: 400px;
     width: cover;
     position :relative;}
+h1 {font-family:Helvetica; color: white;
+}
+h2 {font-family:Helvetica;color: white;
+}
 
-h2{font-family:Helvetica}
+p{ font-family:Helvetica;color: white;
+}
+#p1{text-align: start;max-width: fit-content;
+    font-family: Helvetica, sans-serif;
+    margin: 30px;
+    color: black;
+}
+#p2{text-align: center;
+    font-family: Helvetica, sans-serif;
+    margin: 30px;
+    color: black;}
+#p3{text-align: end;
+    font-family:Helvetica, sans-serif;
+     margin: 30px;
+     color: black;
+}
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+    background-color: gray; 
+    border-radius:6px; 
+    border:2px solid silver;
+    outline: none; 
+    margin-width:400px
+ }
+ #message{height: 200px; width: 150px;}
+.footer{background-color: #eaeaea; 
+    height: 200px;
+    display:flex; justify-content: center
+}
