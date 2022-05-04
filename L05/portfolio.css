@@ -1,17 +1,15 @@
 body{margin:0%;
+    top: 0%;
 background-image:url(pexels-olha-ruskykh-5984612.jpg);
 filter: blur(30%);
 }
  #banner{
     animation-name: banner;
     width: 280px;
-    height: 50px;
-    top: 3px;
     position: fixed;
     background-color: darkgrey;
-    display: inline-flex;
-    margin-left: 80%;
-    margin-top: 0%;
+    right: 10%;
+    top: 0%;
     padding-left: 60px;
     z-index: 99;
     font-size: 20px;
@@ -67,9 +65,14 @@ float:left
    animation-timing-function: ease-in-out;
 }
 @keyframes slide { 
-0% {background-image: url("DSC_2289.JPG");}
-50%{background-image: url("DSC_1327.JPG");}
-100% {background-image: url("DSC_1628.JPG");}
+0% {background-image: url("DSC_2289.JPG");
+image-rendering:optimizeSpeed;}
+50%{background-image: url("DSC_1327.JPG");
+    image-rendering:optimizeSpeed}
+100% {background-image: url("DSC_1628.JPG");
+    image-rendering:optimizeSpeed
+}
+
 
 }
 
@@ -89,6 +92,7 @@ h2 {font-family: 'Advent Pro', sans-serif;;
 .bildchen:hover{width:700px; 
     height:480px; 
      display: block; 
+     transition-duration: 2s
 }
 
 #vid{
