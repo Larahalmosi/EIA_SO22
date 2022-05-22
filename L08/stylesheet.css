@@ -12,9 +12,9 @@ button{
    
 }
 .blue{
-    color: #0099ff;}
+   background-color: #0099ff; }
 .pink{
-    color: #df56e4;}
+    background-color: #e631ec;}
 .yellow{
-    color: #e7f84a;}
+    background-color: #fced1e;}
 #play-button{ cursor: pointer;}
