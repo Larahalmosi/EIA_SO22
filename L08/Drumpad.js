@@ -33,4 +33,32 @@ window.addEventListener("load", function () {
         }, 500);
     });
 });
+//key//
+document.addEventListener('keydown', (event) => { if (event.key == "0") {
+    playSample("hihat.mp3");
+} });
+document.addEventListener('keydown', (event) => { if (event.key == "1") {
+    playSample("kick.mp3");
+} });
+document.addEventListener('keydown', (event) => { if (event.key == "2") {
+    playSample("snare.mp3");
+} });
+document.addEventListener('keydown', (event) => { if (event.key == "3") {
+    playSample("F.mp3");
+} });
+document.addEventListener('keydown', (event) => { if (event.key == "4") {
+    playSample("G.mp3");
+} });
+document.addEventListener('keydown', (event) => { if (event.key == "5") {
+    playSample("A.mp3");
+} });
+document.addEventListener('keydown', (event) => { if (event.key == "6") {
+    playSample("C.mp3");
+} });
+document.addEventListener('keydown', (event) => { if (event.key == "7") {
+    playSample("laugh-1.mp3");
+} });
+document.addEventListener('keydown', (event) => { if (event.key == "8") {
+    playSample("laugh-2.mp3");
+} });
 //# sourceMappingURL=Drumpad.js.map

@@ -1,0 +1,20 @@
+body{background: #000; 
+    text-align: center;
+    position:absolute ;
+padding-left: 35%;
+margin-top: 5%;
+padding-right: 35%;
+ }
+button{ 
+    width:  150px;
+    height: 150px;
+    cursor: pointer;
+   
+}
+.blue{
+   background-color: #0099ff; }
+.pink{
+    background-color: #e631ec;}
+.yellow{
+    background-color: #fced1e;}
+#play-button{ cursor: pointer;}
