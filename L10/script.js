@@ -2,8 +2,10 @@ var let, total = 0;
 let oben = 0;
 let done = 0;
 let add, Taskbox = document.getElementbyID("addTask, ");, let, newDiv, HTMLElement = document.createElement("div"));
-addTaskBox.appendChild(newDiv);
-document.addEventListener("keydown"), (event) => ;
-if (event.keyCode === 13)
-    ;
+document.querySelector("#addBtn").addEventListener("click", addNewTask);
+total++;
+document.querySelector("#myinput").innerHTML = String(total + " in total");
+let textEingabefeld = document.createElement("h7");
+textEingabefeld.innerHTML = input.value;
+textEingabefeld.id = "text";
 //# sourceMappingURL=script.js.map

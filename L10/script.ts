@@ -8,6 +8,11 @@ let add Taskbox: HTMLElement=  document.getElementbyID("addTask
 ");
 let newDiv: HTMLElement= document.createElement("div");
 
-addTaskBox.appendChild(newDiv);
-document.addEventListener("keydown"),(event:KeyboardEvent)
-if (event.keyCode===13)
+document.querySelector("#addBtn").addEventListener("click", addNewTask);
+total++; 
+document.querySelector("#myinput").innerHTML = String( total + " in total");
+
+let textEingabefeld: HTMLElement = document.createElement("h7");
+
+textEingabefeld.innerHTML = input.value;
+textEingabefeld.id = "text";
