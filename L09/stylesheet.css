@@ -4,6 +4,7 @@ body{background: #000;
 padding-left: 35%;
 margin-top: 5%;
 padding-right: 35%;
+
  }
 button{ 
     width:  150px;
@@ -17,4 +18,9 @@ button{
     background-color: #e631ec;}
 .yellow{
     background-color: #fced1e;}
-#play-button{ cursor: pointer;}
+#play-button{ cursor: pointer; }
+
+.control {
+    color: #ffffff;  
+    font-size: 75px;
+}
