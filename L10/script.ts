@@ -1,48 +1,37 @@
-//zähler Aufdgaben//
-let total: number = 0;
+//Zähler//
+var counter: number = 0;
 
-let add Taskbox: HTMLElement=  document.getElementbyID("addTask");
-let newDiv: HTMLElement= document.createElement("div");
+   //Tastatur//
+window.addEventListener("load", function(): void {
+    document.querySelector("input").addEventListener("keydown", (event) => { if (event.keyCode === 13) { if (document.querySelector("input").value != "") 
+    { createTask(); document.querySelector("input").value = ""; } else {alert("Error 271: Must not be empty!"); }}});
 
-document.querySelector("#addBtn").addEventListener("click", addNewTask);
-total++; 
-document.querySelector("#myinput").innerHTML = String( total + " in total");
+});
 
-let textEingabefeld: HTMLElement = document.createElement("h7");
-
-textEingabefeld.innerHTML = input.value;
-textEingabefeld.id = "text";
-
-
-
-//Funktion neue Aufgabe//
-
-function addNewTask (): void {
+//Erstellt die Task//
+function createTask(): void {
+    counter++;
+    document.getElementById("summe").innerHTML = "" + counter;
+    let checkedTask: boolean = false;
+    let input: string = document.querySelector("input").value;
+    var tasklist: any = document.getElementById("tasklist");
+    var createText: any = document.createElement("p");
     var newTask: any = document.createElement("li");
     var createCheckIcon: any = document.createElement("i");
-    var createDelIcon: any = document.createElement("i");}
+    var createDelIcon: any = document.createElement("i");
+    tasklist.appendChild(newTask);
+    newTask.appendChild(createCheckIcon);
+    createCheckIcon.classList.add("fas", "fa-square");
+    createCheckIcon.setAttribute("id", "check");
+    newTask.appendChild(createText);
+    createText.innerHTML = input;
+    newTask.appendChild(createDelIcon);
+    createDelIcon.classList.add("fas", "fa-trash-alt");
 
-    // Counter für Taskboxs in total
-    total++; 
-    document.querySelector("#summe").innerHTML = String( total + " in total");
+ 
 
-    let textEingabefeld: HTMLElement = document.createElement("h7");
-
-    textVonEingabefeld.innerHTML = input.value;
-    textVonEingabefeld.id = "text";
-
-
-
-
-//Entertaste//
-document.addEventListener("keydown", function (event: KeyboardEvent): void { 
-    if (event.keyCode == 13) {
-       addNewTask();
-    }
-});
-//Funktionen Icons//
-createCheckIcon.addEventListener("click", function(): void {if (!checkedTask) {createCheckIcon.setAttribute("class", "fas fa-check-square"); checkedTask = true; 
-createCheckIcon.setAttribute("style", "color: #21d42a"); } else {createCheckIcon.setAttribute("class", "fas fa-square"); checkedTask = false; createCheckIcon.setAttribute("style", "color: white"); }});
-createDelIcon.addEventListener("click", function(): void { tasklist.removeChild (newTask); counter--; document.getElementById("summe").innerHTML = "" + counter; });
-
-//event entertase
+    //Funktionen Icons//
+    createCheckIcon.addEventListener("click", function(): void {if (!checkedTask) {createCheckIcon.setAttribute("class", "fas fa-check-square"); checkedTask = true;  } 
+    else {createCheckIcon.setAttribute("class", "fas fa-square"); }});
+    createDelIcon.addEventListener("click", function(): void { tasklist.removeChild (newTask); counter--; document.getElementById("summe").innerHTML = "" + counter; });
+}
